@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Contact form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsivo.css">
+</head>
+
+<body>
+
+  <!-- Pop-up de Sucesso -->
+  <div id="popup" class="popup">
+    <div class="popup-content">
+
+      <div class="topo">
+        <div class="checkmark-circle">
+          <div class="checkmark"></div>
+        </div>
+        <h1>Message Sent!</h1>
+      </div>
+
+      <div class="base">
+        <h2>Thanks for completing the form. We'll be in touch soon!</h2>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="conteudo">
+    <h1>Contact Us</h1>
+
+    <div class="informacoes">
+
+      <div class="caixa" id="fisrtName">
+        <p>Fisrt Name *</p>
+        <input type="text" name="firtName" id="firstName" required>
+      </div>
+
+      <div class="caixa" id="lastName">
+        <p>Last Name *</p>
+        <input type="text" name="lastName" id="lastName">
+      </div>
+
+      <div class="caixa" id="email">
+        <p>Email Address *</p>
+        <input type="text" name="emailAddress" id="emailAddress">
+      </div>
+
+      <div class="caixaQuery " id="query">
+        <p>Query Type *</p>
+
+        <div class="opcoesQuery">
+          <label class="opcaoQuery">
+            <input type="radio" name="queryTipo" value="general"> General Enquiry
+          </label>
+
+          <label class="opcaoQuery">
+            <input type="radio" name="queryTipo" value="support"> Support Request
+          </label>
+        </div>
+      </div>
+
+      <div class="caixa" id="message">
+        <p>Message *</p>
+        <textarea name="message" id="message" rows="4"></textarea>
+      </div>
+    </div>
+    <div class="consentimentos">
+      <input type="checkbox" name="consent" id="consent"> I consent to being contacted by the team *
+    </div>
+
+
+    <button id="submitButton" type="submit" >Submit</button>
+
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+    Coded by <a target="_blank" href="https://valterpontes.github.io/portfolio-simplificado/">Valter Pontes</a>.
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

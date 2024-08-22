@@ -1,0 +1,22 @@
+@media (max-width: 900px) {
+    .conteudo {
+        width: 90vw;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .conteudo {
+        height: 100%;
+    }
+    .informacoes {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .opcoesQuery {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
